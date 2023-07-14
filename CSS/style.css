@@ -1,113 +1,205 @@
+/* CSS styles for the Shopping Cart website */
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
 
 .navbar {
-    background-color: lightblue;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-.navbar-menu {
-    list-style: none;
-    display: flex;
-  }
-   
-.navbar-menu li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-  }
-  
-.navbar-menu li a:hover {
-    background-color: #ddd;
-    border-radius: 5px;
-  }
-
-#Shop-Product{
-    color: brown;
-    text-align: center;   
-}
-
-i{
-    cursor: pointer;
-}
-
-.products-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+}
+
+/* Product container styles */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Product item styles */
 .product-item {
-  text-align: center;
-  padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 200px; 
-  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-item span {
   display: block;
-  margin: 0 auto;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Marquee styles */
+marquee {
+  margin-top: 20px;
+  color: red;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    margin-top: 10px;
+  }
+
+  .navbar-menu li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+
+/*Cart part*/
+
+/* CSS styles for the Shopping Cart */
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.container .col-md-2 {
+  text-align: left;
+  padding: 4px;
+}
+
+.container .col-md-2 i {
+  margin-right: 5px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
   width: 100%;
   height: auto;
 }
 
-.add-to-cart-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.product-item h5 {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-
-/* ?CART  CSS*/
-
-@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Dosis:wght@200&family=Rubik+Vinyl&family=Secular+One&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Belanosima', sans-serif;
+.cart-price {
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    background-color:crimson;
-    padding: 5px 60px;
-}
-nav h2,i{
-    padding-top: 22px;
-}
-.heading{
-    text-align: center;
-    margin-top: 35px;
-
-}
-.item{
-    width: 300px;
-    border:2px solid black;
-    margin:4px 4px;
-    text-align: center;
-}
-.item img{
-    position: relative;
-    left: 27px;
+.cart-quantity {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100px;
 }
 
-section{
-    display: flex; 
-    flex-wrap: wrap;
-    margin-left: 139px;
-    
+.total-price {
+  font-weight: bold;
+  margin-top: 5px;
 }
- 
+
+.btn {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#close-cart {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.home-link {
+  margin-right: auto;
+}

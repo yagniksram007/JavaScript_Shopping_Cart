@@ -2,12 +2,15 @@
 //document.getElementById("heading").innerHTML="Java class";
 //document.getElementsByClassName("test").innerHtml="HTML"
 
-// HW
-// Create cart page and revise functions in javascript and DOM also.
+// cart -Func
+// let cartIcon = document.querySelector("#cart-Icon");
+// let cart = document.querySelector(".cart");
+// let hideCart = document.querySelector("#cart-cart");
 
-//ABCDEFG G se nikla Gandhiji, Gandhiji ne kaya peru, peru nikla Nehru, Nehru ne kaya pan
-//Pan se nikla pakistan, Pakistan ne mara 4, 4 se nikla chor, chor ne pakadi catch, India jeeti match
-
+//exit cart
+// hidecart.onclick = () =>{
+//   cart.classlist.add("cart-active");
+// };
 
 //Thank you for reading
 
