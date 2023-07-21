@@ -5,8 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart</title>
+  <!--font-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+    body { 
+      font-family: 'Belanosima', sans-serif;
+    }
+  </style>
+
+  <link href="ttps://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/cart.css">
   <style>
     /* Additional CSS to align the "Home" link to the right */
     .home-link {
@@ -17,17 +27,16 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-10 text-center  p-1 text-danger">
-        <h2><u>Added to cart</u></h2>
-      </div>
-      <div class="col-md-2 text-right text-danger p-4 home-link">
-        <i class='bx bx-exit'></i>
-        <a href="./Home.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
+    
+      <div class="element">
+        <a href="./Home.html" style="color: white; font-size: x-large"><i class='bx bx-exit'></i>Home</a>
+        <p style="display: inline-block; font-size: x-large; margin-left: 35%;">Added to the Cart</p>
       </div>
     </div>
   </div>
 
+  <br>
+ 
   <div class="products-container">
     <div class="product-item">
       <img src="https://m.media-amazon.com/images/I/71E5zB1qbIL._SX679_.jpg" class="card-img-top ">
@@ -85,6 +94,8 @@
     </div>
   
     </div>
+
+    <script src="../JS/Script.js"></script>
 
 </body>
 

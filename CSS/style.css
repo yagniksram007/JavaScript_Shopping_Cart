@@ -1,24 +1,33 @@
 /* CSS styles for the Shopping Cart website */
 
-/* Reset default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+
 /* Set a background color for the body */
 body {
-  background-color: #f4f4f4;
+  font-family: 'Belanosima', sans-serif;
+  height: 0%;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Header styles */
 header {
-  background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
+  text-align: center;
+}
+    
+h2 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .navbar {
+  opacity: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +39,7 @@ header {
   font-size: 20px;
   margin-right: 10px;
 }
-
+  
 /* Navbar menu styles */
 .navbar-menu {
   list-style: none;
@@ -51,53 +60,66 @@ section {
   padding: 20px;
 }
 
-/* Product container styles */
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
+.text a{
+  color: white;
 }
 
-/* Product item styles */
-.product-item {
-  background-color: #fff;
-  padding: 10px;
+.bg_cover{
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styles for the content section */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the last value to adjust opacity */
+  color: white;
+  font-size: 24px;
 }
 
-.product-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.product-item h3 {
-  margin-top: 10px;
+.content-1{
+  align-items: center;
+  justify-content: center;
+  text-shadow: 80%;
+  text-align: center;
   font-size: 18px;
 }
-
-.product-item span {
-  display: block;
-  margin-top: 5px;
-  font-weight: bold;
+    
+.content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
 }
-
-.add-to-cart-btn {
-  margin-top: 10px;
+    
+.content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+}
+    
+.content button {
   background-color: #333;
-  color: #fff;
+  color:red;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+}
+    
+.content button:hover {
+  background-color: red;
 }
 
-/* Marquee styles */
-marquee {
-  margin-top: 20px;
-  color: red;
-}
-
-/* Responsive styles for smaller screens */
+/*Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -112,94 +134,4 @@ marquee {
     margin-right: 0;
     margin-bottom: 5px;
   }
-}
-
-
-/*Cart part*/
-
-/* CSS styles for the Shopping Cart */
-
-/* Reset default margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set a background color for the body */
-body {
-  background-color: #f4f4f4;
-  font-family: 'Belanosima', sans-serif;
-}
-
-.container {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-.container .col-md-2 {
-  text-align: left;
-  padding: 4px;
-}
-
-.container .col-md-2 i {
-  margin-right: 5px;
-}
-
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
-
-.product-item {
-  background-color: #fff;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.product-item img {
-  width: 100%;
-  height: auto;
-}
-
-.product-item h5 {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.cart-price {
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.cart-quantity {
-  margin-top: 5px;
-  padding: 5px;
-  width: 100px;
-}
-
-.total-price {
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.btn {
-  margin-top: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-#close-cart {
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.home-link {
-  margin-right: auto;
-}
+} 

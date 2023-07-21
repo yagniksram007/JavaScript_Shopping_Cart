@@ -1,0 +1,74 @@
+/*Cart CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color for the body */
+  body {
+    background-color: #f4f4f4;
+    font-family: 'Belanosima', sans-serif;
+  }
+
+  
+  .container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .cart-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .cart-quantity {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  .total-price {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #close-cart {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .element {
+    margin-right: auto;
+  }

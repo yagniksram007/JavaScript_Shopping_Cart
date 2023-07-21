@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/product.css">
+    
+    <!--Box Icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--font-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+      body { 
+        font-family: 'Belanosima', sans-serif;
+      }
+    </style>
+
+    <link href="ttps://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+     <!--Header-->
+     <header>
+      <nav class="navbar">
+        <a href="" class="navbar"><i class="bx bx-shopping-bag"></i> Shopping Cart</a>
+        <ul class="navbar-menu">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Products.html">Products</a></li>
+          <li><a href="./Cart.html">Cart</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+    <br>
+    <!--Shopping Section-->
+    <section>
+        <div>
+          <center>
+            <h2 id="Shop-Product" >iPhones deals</h2>
+          </center>
+            <!--Content-->
+        </div>
+        <br>
+
+        <div class="products-container">
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/71E5zB1qbIL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px" >
+              <h3>Apple iPhone 12 </h3> 
+              <span>₹ 53,999</span>
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+            
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/61nzPMNY8zL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px">
+              <h3>Apple iPhone 13 Pro</h3>
+              <span>₹ 1,25,999</span>
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+            
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px">
+              <h3>Apple iPhone 14 Pro</h3>
+              <span>₹ 1,19,999</span>
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+            
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/71T5NVOgbpL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px">
+              <h3>iPhone 14 Pro Max</h3>
+              <span>₹ 1,27,999</span> 
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS-UtQj4dKqKOlfvwvyknFM_fzVhQW32XN3RDg8yPFL-LxQ-mzNOPXcR_otWpmz3i25IR8l5QL_svODJYaCddD5v2ME97lVpQ" class="img-thumbnail" alt="Image Not Found!" width="200px">
+              <h3>iPhone 12 Pro Max</h3>
+              <span>₹ 1,23,299</span> 
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/71QE00iB9IL._SX679_.jpg" alt="Image Not Found!" width="200px" >
+              <h3>Apple iPhone 11 Pro</h3>
+              <span>₹ 79,899</span> 
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="https://m.media-amazon.com/images/I/71ZOtNdaZCL._SX679_.jpg" alt="Image Not Found!" width="200px">
+              <h3>Apple iPhone 13 mini</h3>
+              <span>₹ 64,900</span> 
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+
+            <div class="product-item">
+              <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS0ZUxnzM7cROxxL2gi5ArlHR2DL_xn-NcTrujoXwOLQ4Z_1_8" class="img-thumbnail" alt="Image Not Found!" width="200px">
+              <h3>iPhone SE</h3>
+              <span>₹ 54,900</span> 
+              <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+            </div>
+
+          <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61nPiOOv9BL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px">
+            <h3>Apple iPhone 13</h3>
+            <span>₹ 57,899</span> 
+            <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+          </div>
+
+        <div class="product-item">
+          <img src="https://m.media-amazon.com/images/I/61BGE6iu4AL._SX679_.jpg" class="img-thumbnail" alt="Image Not Found!" width="200px">
+          <h3>Apple iPhone 14 Plus</h3>
+          <span>₹ 79,499</span> 
+          <br><button type="submit" class="btn btn-danger" onclick="addToCart()">Add to cart</button>
+        </div>
+      </div>
+
+      <br>
+
+          <marquee behavior="scroll" direction="left" style="color: red;">Disclaimer: Featured products are recommended, whereas others are provided for your own discretion and general market information.  </marquee>
+
+    </section>
+  
+
+    <script src="../JS/Script.js">
+
+    </script>
+
+</body>
+</html>

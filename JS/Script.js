@@ -12,47 +12,48 @@
 //   cart.classlist.add("cart-active");
 // };
 
-//Thank you for reading
+// Initialize an empty cart array
+var cartItems = [];
 
+function addToCart(productName, price) {
+  alert('Item added to cart. Proceed to checkout.');
+  
+  // Create a cart item object
+  var item = {
+    name: productName,
+    price: price
+  };
 
-// searchBar.js
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-  
-    searchInput.addEventListener('input', handleSearch);
-  
-    function handleSearch() {
-      const query = searchInput.value.toLowerCase();
-      const results = performSearch(query);
-      displayResults(results);
-    }
-  
-    function performSearch(query) {
-      // Example search logic
-      const products = [
-        'Product 1',
-        'Product 2',
-        'Product 3',
-        'Another Product',
-        'Some Product'
-      ];
-  
-      const results = products.filter(product =>
-        product.toLowerCase().includes(query)
-      );
-  
-      return results;
-    }
-  
-    function displayResults(results) {
-      searchResults.innerHTML = '';
-  
-      results.forEach(result => {
-        const resultElement = document.createElement('p');
-        resultElement.textContent = result;
-        searchResults.appendChild(resultElement);
-      });
-    }
+  // Add the item to the cart array
+  cartItems.push(item);
+
+  // Update the cart display
+  updateCartDisplay();
+}
+
+function updateCartDisplay() {
+  // Get the cart items container element
+  var cartItemsContainer = document.getElementById("cartItemsContainer");
+
+  // Clear the container
+  cartItemsContainer.innerHTML = "";
+
+  // Loop through the cart items and display them
+  cartItems.forEach(function(item) {
+    // Create an element for each cart item
+    var itemElement = document.createElement("div");
+    itemElement.textContent = item.name + " - ₹ " + item.price;
+
+    // Append the item element to the cart items container
+    cartItemsContainer.appendChild(itemElement);
   });
-  
+}
+
+function navBars(){
+  fetch('Navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+}
+
